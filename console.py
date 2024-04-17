@@ -1,6 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/pythoni3
 import cmd
-
 
 class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
@@ -14,13 +13,6 @@ class HBNBCommand(cmd.Cmd):
 
     def emptyline(self):
         pass
-
-    def do_help(self, arg):
-        if arg:
-            super().do_help(arg)
-        else:
-            print("Help documentation goes here")
-
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
